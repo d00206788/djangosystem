@@ -1,0 +1,69 @@
+{% extends 'djangoapp/main.html' %}
+
+{% block content %}
+
+{%  include 'djangoapp/status.html' %}
+
+<br>
+
+<div class="row">
+	<div class="col-md-5">
+		<h5>USERS: {{total_users}}</h5>
+		<hr>
+		<div class="card card-body">
+			
+			<table class="table table-sm">
+				<tr>
+
+                    <th></th>
+
+					<th>User's Name</th>
+				</tr>
+
+                {% for breeds in breeds %}
+
+                <tr>
+					<!-- this did not work so i put no link -->
+                    <td><a class="btn btn-sm btn-info" href="#">View</a></td> 
+                    <td>{{breeds.userinfo}}</td>
+
+                </tr>
+
+                {% endfor %}
+
+			</table>
+		</div>
+	</div>
+
+	<div class="col-md-7">
+		<h5>Dog info</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="{% url 'create_dog'%}">Add Dog</a>
+			<table class="table table-sm">
+				<tr>
+					<th>Breed</th>
+					<th>Age</th>
+					<th>Name</th>
+				</tr>
+
+                {% for breeds in breeds %}
+                <tr>
+                    <td>{{breeds.breedname}}</td>
+                    <td>{{breeds.age}}</td>
+                    <td>{{breeds.name}}</td>
+
+                </tr>
+
+                {% endfor %}
+
+
+		
+			</table>
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@300&family=Rethink+Sans:wght@500&family=Roboto+Mono&display=swap');
+
+body{
+    background-color: #ffecef;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Rethink Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
+}
+
+
+#total-dogs{
+    background-color: #cc99a2;
+}
+
+
+#different-breeds{
+    background-color: #e5acb6    ;
+}
+
+#different-temperments{
+    background-color: pink;
+}
+.btn {
+    background-color: #383c44!important;
+    border: none;
+}
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+.navbar-nav > span {
+    padding-left:40px;
+    padding-right:20px;
+}
+
+

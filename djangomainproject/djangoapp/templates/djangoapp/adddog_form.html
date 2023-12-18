@@ -1,0 +1,15 @@
+{% extends 'djangoapp/main.html' %}
+{% load static %}
+{% block content %}
+
+<!-- was unsure how to style this page properly, as i just used {{form}} instead of typing the usual form method like in login/register etc -->
+
+<form action="" method="POST">
+
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" name="Submit">
+
+</form>
+
+{% endblock%}
